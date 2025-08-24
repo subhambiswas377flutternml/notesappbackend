@@ -5,13 +5,13 @@ import com.notes.app.noteapp.entities.UserEntity;
 public class AuthResponse {
     private int status;
     private String message;
-    private UserEntity userEntity;
+    private UserEntity user;
 
     public AuthResponse(){}
-    public AuthResponse(int status, String message, UserEntity userEntity){
+    public AuthResponse(int status, String message, UserEntity user){
         this.message=message;
         this.status=status;
-        this.userEntity=userEntity;
+        this.user=user;
     }
 
     public int getStatus() {
@@ -22,8 +22,8 @@ public class AuthResponse {
         return message;
     }
 
-    public UserEntity getUserEntity() {
-        return userEntity;
+    public UserEntity getUser() {
+        return user;
     }
 
     public void setMessage(String message) {
@@ -34,7 +34,7 @@ public class AuthResponse {
         this.status = status;
     }
 
-    public void setUserEntity(UserEntity userEntity) {
-        this.userEntity = userEntity;
+    public void setUser(UserEntity user) {
+        this.user = user;
     }
 }

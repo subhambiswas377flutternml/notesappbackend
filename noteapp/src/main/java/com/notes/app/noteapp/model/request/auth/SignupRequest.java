@@ -1,4 +1,4 @@
-package com.notes.app.noteapp.model.request;
+package com.notes.app.noteapp.model.request.auth;
 
 public class SignupRequest {
     private String name;

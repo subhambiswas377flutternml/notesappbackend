@@ -1,8 +1,8 @@
 package com.notes.app.noteapp.controller;
 
 import com.notes.app.noteapp.entities.UserEntity;
-import com.notes.app.noteapp.model.request.LoginRequest;
-import com.notes.app.noteapp.model.request.SignupRequest;
+import com.notes.app.noteapp.model.request.auth.LoginRequest;
+import com.notes.app.noteapp.model.request.auth.SignupRequest;
 import com.notes.app.noteapp.model.response.AuthResponse;
 import com.notes.app.noteapp.repository.UserJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

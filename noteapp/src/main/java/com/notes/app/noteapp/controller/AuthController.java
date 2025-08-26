@@ -5,6 +5,7 @@ import com.notes.app.noteapp.model.request.auth.LoginRequest;
 import com.notes.app.noteapp.model.request.auth.SignupRequest;
 import com.notes.app.noteapp.model.response.AuthResponse;
 import com.notes.app.noteapp.repository.UserJpaRepository;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +17,7 @@ import java.util.List;
 import java.util.Objects;
 
 @RestController
+@Tag(name = "Authentication")
 @RequestMapping(value = "app/auth", consumes = "application/json", produces = "application/json")
 public class AuthController {
     @Autowired

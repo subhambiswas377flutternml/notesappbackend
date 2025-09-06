@@ -22,5 +22,8 @@ public class AppBootstrapper implements CommandLineRunner {
 
         notesJdbcRepository.insertNotesAtInit(new NotesEntity(1,1,"Notes1","Learn Coding"));
         notesJdbcRepository.insertNotesAtInit(new NotesEntity(2,1,"Notes2","Learn MERN"));
+        notesJdbcRepository.insertNotesAtInit(new NotesEntity(3,1,"Notes3","Learn PHP"));
+        notesJdbcRepository.insertNotesAtInit(new NotesEntity(4,1,"Notes4","Learn Fast API with python"));
+        notesJdbcRepository.insertNotesAtInit(new NotesEntity(5,1,"Notes5","Learn Node.js"));
     }
 }
